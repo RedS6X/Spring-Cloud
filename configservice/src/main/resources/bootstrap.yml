@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          # url de respositorio donde estan ubicados los yml de los proyectos
+          uri: https://github.com/RedS6X/Spring-Cloud.git
+          # especificamos donde estan los archivos de configuracion de nuestro proyecto
+          searchPaths: config-data
